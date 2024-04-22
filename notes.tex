@@ -1,0 +1,34 @@
+Notes on SHP failure under circulant lift
+Constructed code in Matlab which checks if $S_{x}$, $G_{x}$, $G_{a}$, $S_{z}$ follow the proper commutation relations before and after lifting via circulants.
+
+
+The lift is the following procedure:
+
+Take the SHP product of Base matrices and then do circulant lift:
+
+
+Trivial Example tried first:
+
+\begin{equation}
+   \boldsymbol{H}= \begin{bmatrix}
+    2&1&1\\
+    1&2&0
+\end{bmatrix}
+\end{equation}
+
+\begin{equation}
+   \boldsymbol{G}= \begin{bmatrix}
+    0&1&2
+
+\end{bmatrix}
+\end{equation}
+Both of these matrices are mod 3
+
+Using SHP product with base matrices: successfully captures SHP commutation relations between gauge ops and stabilizers. 
+
+After Lift: significant failure.  Resultant matrices are not even close to being all 0's . Too large to input here. 
+    
+
+It seems that this example shows that circulant lift procedure on this product does not necessarily preserve the commutation relations. 
+I'm going to check on my lifting procedure to see why its not working. This might be a key issue
+
